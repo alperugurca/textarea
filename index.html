@@ -279,7 +279,7 @@
     </svg>
     New document
   </a>
-  <a class="item" id="qr" href="/qr" role="menuitem">
+  <a class="item" id="qr" href="qr.html" role="menuitem">
     <svg aria-hidden="true" focusable="false" width="22" height="22">
       <use xlink:href="#icon-qrcode"></use>
     </svg>
@@ -303,7 +303,7 @@
     </svg>
     Save as TEXT
   </a>
-  <a class="item" href="https://github.com/antonmedv/textarea" target="_blank" role="menuitem">
+  <a class="item" href="https://github.com/alperugurca/textarea" target="_blank" role="menuitem">
     <svg aria-hidden="true" focusable="false" width="22" height="22">
       <use xlink:href="#icon-github"></use>
     </svg>
@@ -334,7 +334,7 @@
     navigator.serviceWorker.register('sw.js')
   }
 
-  console.log('%cGitHub https://github.com/antonmedv/textarea', 'font-size: 16px; border: 1px solid lightblue; border-radius: 12px; padding: 10px 14px; ')
+  console.log('%cGitHub https://github.com/alperugurca/textarea', 'font-size: 16px; border: 1px solid lightblue; border-radius: 12px; padding: 10px 14px; ')
 
   async function load() {
     try {
@@ -558,7 +558,7 @@
     button.addEventListener('click', event => {
       if (event.clientX || event.targetTouches) ripple(event)
       menu.classList.toggle('visible')
-      qr.setAttribute('href', '/qr' + location.hash)
+      qr.setAttribute('href', 'qr.html' + location.hash)
       shareLink.setAttribute('href', location.href)
     })
 

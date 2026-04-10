@@ -1,7 +1,8 @@
 const CACHE_NAME = 'textarea-2026-01-07'
+const BASE = new URL('.', self.location.href).href
 const ASSETS = [
-  '/',
-  '/qr',
+  BASE,
+  new URL('qr.html', BASE).href,
 ]
 
 self.addEventListener('install', (event) => {
